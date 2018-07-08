@@ -1,0 +1,26 @@
+.menu {
+    margin: 0px;  
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333a;
+}
+
+.menu li a {
+    float: left;
+    margin: 0px;
+    padding: 16px 32px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.menu li a:hover {
+    background-color: #09f5;
+}
