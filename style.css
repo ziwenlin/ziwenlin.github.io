@@ -16,6 +16,28 @@ body {
   background-attachment: fixed;
 }
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td, td p, th p {
+  padding: 2px;
+  margin: 1px;
+}
+
+.accordion {
+  border-left: 5px solid #35a;
+  border-radius: 5px;
+  padding-left: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
 footer, header {
   color: #fff;
   background-color: #555a;
@@ -27,7 +49,6 @@ footer, header {
 footer {
   position: absolute;
   text-align: left;
-  /* width: 100%; */
   right: 0;
   bottom: 0;
   left: 0;
@@ -37,11 +58,8 @@ h1, h2, h3 {
   margin: 8px;
 }
 
-.page{
-  text-align: center;
-}
-
 .page {
+  text-align: center;
   background-color: #eeed;
   border-radius: 12px;
   border-width: 1px;
@@ -49,13 +67,17 @@ h1, h2, h3 {
   margin: 16px 10%;
 }
 
-.contents {
+.panelitems {
+  padding: 0px 18px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.panel {
   text-align: left;
   background-color: white;
   box-shadow: 2px 3px 5px grey;
-  /* float: left; */
-  /* width: 41%; */
-  /* display: inline-block; */
   margin: 16px 8px;
   border-radius: 10px;
   border-style: solid;
