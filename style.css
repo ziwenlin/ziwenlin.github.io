@@ -26,16 +26,20 @@ th, td, td p, th p {
   margin: 1px;
 }
 
-footer, header {
-  color: #fff;
+header {
   background-color: #555a;
-  text-align: center;
+  color: #fff;
   padding: 12px;
+  text-align: center;
+  margin-bottom: 18px;
 }
 
 footer {
-  position: absolute;
+  background-color: #555a;
+  color: #fff;
+  padding: 12px;
   text-align: left;
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;

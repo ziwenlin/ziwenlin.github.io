@@ -4,6 +4,7 @@ function accordion() {
   if (panel.style.maxHeight) {
     panel.style.maxHeight = null;
   } else {
+    // panel.style.transitionDuration = Math.sqrt(panel.scrollHeight/4)/100 + "s";
     panel.style.maxHeight = panel.scrollHeight + "px";
   }
 }

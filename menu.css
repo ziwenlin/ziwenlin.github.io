@@ -31,22 +31,22 @@
   background-color: #ccc;
 }
 
-.panelitems {
-  padding: 0px 18px;
+.panel {
+  padding: 0px 32px;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.2s ease-in-out;
 }
 
-.panel {
+.container {
   text-align: left;
   background-color: white;
   box-shadow: 2px 3px 5px grey;
-  margin: 4px 8px;
+  /* margin: 4px 8px; */
   border-radius: 10px;
   border-style: solid;
   border-color: lightgrey;
-  padding: 16px 16px;
+  padding: 4px;
 }
 /**********************************************************************/
 .page {
@@ -57,31 +57,38 @@
   padding: 16px 16px;
   margin: 16px 10%;
 }
+
+@media only screen and (max-width:960px) {
+  /* For mobile phones: */
+  .page {
+    margin: 16px 2px;
+  }
+}
 /**********************************************************************/
 .menu {
-    margin: 0px;
-    width: 100%;
+  margin: 0px;
+  width: 100%;
 }
 
 .menu ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    background-color: #333a;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333a;
 }
 
 .menu li a {
-    float: left;
-    margin: 0px;
-    padding: 16px 32px;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    text-transform: capitalize;
-    transition: 0.2s;
+  color: white;
+  float: left;
+  font-size: 20px;
+  margin: 0px;
+  padding: 16px 32px;
+  transition: 0.25s;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .menu li a:hover {
-    background-color: #09f5;
+  background-color: #09f5;
 }
