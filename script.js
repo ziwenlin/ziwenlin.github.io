@@ -1,3 +1,17 @@
+function randomColor(change, selector, saturation=100, lightness=50, alpha=0, range=240, offset=20) {
+  var lijst = document.querySelectorAll(selector);
+  for (var i = 0; i < lijst.length; i++) {
+    var color = hsl(range, offset, saturation, lightness, alpha);
+    lijst[i].style[change] = color;
+    console.log(color);
+  }
+}
+
+function hsl(range, offset, saturation, lightness, alpha) {
+  var random = Math.floor(Math.random() * range + offset);
+  return "hsl(" + random + "," + saturation + "%," + lightness + "%)";
+}
+
 /* Begin Initial */
 
 /* Check if there is an scroll-progress-bar */
@@ -7,7 +21,6 @@ if (progressContainer) {
   var sticky = progressContainer.offsetTop;
 }
 
-addEvent(window, "resize", onResize);
 
 var collapses = document.getElementsByClassName("collapse");
 for (var i = 0; i < collapses.length; i++) {
@@ -63,3 +76,17 @@ function onScroll() {
     progressContainer.classList.remove("sticky");
   }
 }
+
+
+/**
+ * Main, start of the program
+ */
+function main() {
+  randomColor("borderColor", "h2", 90, 70);
+  randomColor("borderColor", "img", 30);
+  randomColor("borderColor", "article", 100, 70, 0, 210, 20);
+
+  addEvent(window, "resize", onResize);
+}
+
+main()

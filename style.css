@@ -1,19 +1,18 @@
 html {
   height: 100%;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 0px;
-  min-height: 100%;
-  position: relative;
-  color: #000;
-  padding-bottom: 160px;
-  background-image: url("background3.jpg");
+  background-image: url("images/background3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+body {
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  height: 0;
+  position: relative;
+  color: #000;
+  background-color: #1a689d;
 }
 
 table, th, td {
@@ -21,9 +20,8 @@ table, th, td {
   border-collapse: collapse;
 }
 
-th, td, td p, th p {
-  padding: 2px;
-  margin: 1px;
+th, td {
+  padding: 1px 4px;
 }
 
 header {
@@ -39,12 +37,118 @@ footer {
   color: #fff;
   padding: 12px;
   text-align: left;
-  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
 h1, h2, h3 {
-  margin: 8px;
+  margin-left: 0.5em;
+}
+
+h1 {
+  font-family: "Helvetica", "Calibri", Arial;
+  font-size: 2em;
+  margin: 12px;
+}
+
+h1 ~ h2 {
+  margin-top: 0;
+}
+
+h2 {
+  display: block;
+  margin-top: 2em;
+  border-bottom: 6px solid #35a;
+  padding: 5px 0;
+}
+
+article {
+  text-align: left;
+  background-color: #fefefe;
+  margin-bottom: 1.2em;
+  border-radius: 16px;
+  border-top: 2.5em solid;
+  padding: 0 32px 32px 32px;
+  overflow-x: auto;
+}
+
+article p {
+  margin: 0.5em 1em;
+}
+
+main {
+  text-align: left;
+  background-color: #ffffffdd;
+  border-radius: 16px;
+  padding: 12px;
+  max-width: 960px;
+  min-height: 80vh;
+  margin: 16px auto;
+}
+
+table {
+  max-width: 96%;
+  min-width: 80%;
+  margin: auto 2%;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+img:active {
+  position: fixed;
+  object-fit: scale-down;
+  background-color: #000000fa;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  object-fit: cover;
+  height: 20em;
+  width: 32%;
+  margin: 0.2em 0.3%;
+  box-shadow: 3px 3px 5px #b9b9b9;
+  border: 1px solid #d6d6d6;
+}
+
+@media only screen and (max-width:960px) { /* Tablets en computers */
+  article {
+    padding: 12px;
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+  }
+  main {
+    padding: 4px; 
+  }
+  img {
+    height: 200px;
+    width: 48%;
+    margin: 0.2em 0.5%;
+  }
+}
+
+@media only screen and (max-width:640px) { /* Phones */
+  main {
+    padding: unset;
+    background: unset;
+  }
+  article {
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  img {
+    height: 150px;
+    width: 96%;
+    margin: 0.1em 2%;
+  }
 }

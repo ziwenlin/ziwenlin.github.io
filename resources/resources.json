@@ -1,0 +1,112 @@
+{
+  "sites": [
+    {
+      "path": "index.html",
+      "style": "default",
+      "title": "Portfolio van Zi-Wen Lin",
+      "articles": [
+        "articles/welkom.html"
+      ]
+    },
+    {
+      "path": "jaar1.html",
+      "style": "default",
+      "title": "Eerste jaar",
+      "articles": [
+        "articles/eerstejaar.html"
+      ]
+    },
+    {
+      "path": "jaar2.html",
+      "style": "default",
+      "title": "Tweede jaar",
+      "articles": [
+        "articles/inaanmaak.html"
+      ]
+    },
+    {
+      "path": "jaar3.html",
+      "style": "default",
+      "title": "Derde jaar",
+      "articles": [
+        "articles/inaanmaak.html"
+      ]
+    },
+    {
+      "path": "jaar4.html",
+      "style": "default",
+      "title": "Vierde jaar",
+      "articles": [
+        "articles/inaanmaak.html"
+      ]
+    },
+    {
+      "path": "stage.html",
+      "style": "default",
+      "title": "Stage",
+      "articles": [
+        "articles/inaanmaak.html"
+      ]
+    },
+    {
+      "path": "cv.html",
+      "style": "default",
+      "title": "CV",
+      "articles": [
+        "articles/inaanmaak.html"
+      ]
+    },
+    {
+      "path": "links.html",
+      "style": "default",
+      "title": "Links",
+      "articles": [
+        "articles/inaanmaak.html"
+      ]
+    },
+    {
+      "path": "videos.html",
+      "style": "default",
+      "title": "Video's",
+      "articles": [
+        "articles/inaanmaak.html"
+      ]
+    },
+    {
+      "path": "extra.html",
+      "style": "default",
+      "title": "Extra",
+      "articles": [
+        "articles/inaanmaak.html"
+      ]
+    },
+    {
+      "path": "stage.html",
+      "style": "default",
+      "title": "",
+      "articles": [
+        "articles/inaanmaak.html"
+      ]
+    }
+  ],
+  "styles": [
+    {
+      "name": "default",
+      "build": "resources/html.html",
+      "head": "resources/head.html",
+      "navigation": "resources/navigation.html",
+      "header": "resources/header.html",
+      "footer": "resources/footer.html",
+      "script": "resources/script.html"
+    },
+    {
+      "name": "forumn",
+      "build": "resources/html.html",
+      "head": "resources/head.html",
+      "navigation": "resources/navigation.html",
+      "header": "resources/header.html",
+      "footer": "resources/footer.html",
+      "script": "resources/script.html"
+    }
+  ]
+}
